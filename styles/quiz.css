@@ -33,7 +33,7 @@ button {
   flex-direction: column;
   background-color: rgb(40, 40, 40);
   width: 1000px;
-  height: 600px;
+  height: fit-content;
   border: 0px;
   border-radius: 10px;
   box-shadow: -5px 5px 10px 0px rgb(60, 92, 122);
@@ -55,14 +55,13 @@ button {
   border: 0;
   border-radius: 10px;
   width: 80%;
-  height: 300px;
+  height: fit-content;
   display: flex;
   gap: 10px;
   flex-direction: column;
   padding: 32px;
   color: white;
 }
-
 .button-answer {
   color: white;
   width: 100%;

@@ -16,24 +16,25 @@ function mainWorkflow() {
   });
 
   buttonStart.addEventListener("click", () => {
-    window.location.href = "pages/quest.html";
+    window.location.href = "quest.html";
   });
 
   buttonOptionEasy.addEventListener("click", () => {
     console.log("Clicou no facil");
-    buttonOptions.innerHTML = "Dificuldade: Facil";
+
+    buttonOptions.innerHTML = `Dificuldade: <span style="color: green">Facil</span>`;
     localStorage.setItem(key, 1);
     divList.style.display = "none";
   });
   buttonOptionMedium.addEventListener("click", () => {
     console.log("Clicou no Medio");
-    buttonOptions.innerHTML = "Dificuldade: Medio";
+    buttonOptions.innerHTML = `Dificuldade: <span style="color: orange">Medio</span>`;
     localStorage.setItem(key, 2);
     divList.style.display = "none";
   });
   buttonOptionHard.addEventListener("click", () => {
     console.log("Clicou no Hard");
-    buttonOptions.innerHTML = "Dificuldade: Dificil";
+    buttonOptions.innerHTML = `Dificuldade: <span style="color: red">Dificil</span>`;
     localStorage.setItem(key, 3);
     divList.style.display = "none";
   });
