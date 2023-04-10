@@ -163,12 +163,12 @@ function mainWorkflow() {
     console.log(valueQuest);
 
     if (valueQuest === undefined) {
-      return alert("Ta vazio");
+      return alert("Selecione uma opção");
     }
     getAnswer(valueQuest);
     console.log("array", answerUser);
     if (index >= difficulty.length - 1)
-      return (window.location.href = "index.html");
+      return (window.location.href = "../../index.html");
 
     while (divAnswer.childElementCount > 1) {
       divAnswer.removeChild(divAnswer.lastChild);

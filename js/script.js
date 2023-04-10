@@ -16,7 +16,7 @@ function mainWorkflow() {
   });
 
   buttonStart.addEventListener("click", () => {
-    window.location.href = "quest.html";
+    window.location.href = "/pages/quest.html";
   });
 
   buttonOptionEasy.addEventListener("click", () => {
