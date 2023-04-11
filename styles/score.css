@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Roboto+Mono&display=swap");
+
+body {
+  background-color: rgb(50, 50, 50);
+  color: black;
+}
+/* .button-answer {
+} */
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Open Sans", sans-serif;
+}
+
+p,
+button {
+  font-family: "Roboto Mono", monospace;
+}
+
+.div-align {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+
+.div-card {
+  display: flex;
+  padding: 20px 64px;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(40, 40, 40);
+  width: 1000px;
+  height: fit-content;
+  border: 0px;
+  border-radius: 10px;
+  box-shadow: -5px 5px 10px 0px rgb(60, 92, 122);
+  gap: 50px;
+}
+
+.div-answer {
+  margin-top: 50px;
+  background-color: rgb(78, 78, 78);
+  color: white;
+  border: 0;
+  width: 80%;
+  border-radius: 10px;
+  height: fit-content;
+  padding: 32px;
+  display: flex;
+  justify-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.div-quest {
+  border: 0;
+  border-radius: 10px;
+  width: 80%;
+  height: fit-content;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  padding: 32px;
+  color: white;
+}
+
+.h3-quiz {
+  text-align: center;
+}
+
+.btn {
+  background-color: rgb(60, 92, 122);
+  border: none;
+  width: 200px;
+  padding: 12px;
+  border-radius: 10px;
+  align-self: center;
+  color: white;
+  transition: transform 0.4s ease-in-out;
+}
+
+.btn:hover {
+  background-color: rgb(60, 92, 122);
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: transform 0.4s ease;
+}
+.div-buttons {
+  display: flex;
+  gap: 20px;
+}

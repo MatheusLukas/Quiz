@@ -5,6 +5,8 @@ const buttonOptionEasy = document.querySelector("#button-easy");
 const buttonOptionMedium = document.querySelector("#button-medium");
 const buttonOptionHard = document.querySelector("#button-hard");
 
+const teste = document.querySelector("#teste");
+
 let key = "key";
 
 function mainWorkflow() {
@@ -16,7 +18,11 @@ function mainWorkflow() {
   });
 
   buttonStart.addEventListener("click", () => {
-    window.location.href = "/pages/quest.html";
+    window.location.href = "/pages/quiz.html";
+  });
+
+  teste.addEventListener("click", () => {
+    window.location.href = "/pages/score.html";
   });
 
   buttonOptionEasy.addEventListener("click", () => {
