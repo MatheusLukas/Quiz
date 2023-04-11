@@ -21,10 +21,6 @@ function mainWorkflow() {
     window.location.href = "/pages/quiz.html";
   });
 
-  teste.addEventListener("click", () => {
-    window.location.href = "/pages/score.html";
-  });
-
   buttonOptionEasy.addEventListener("click", () => {
     // console.log("Clicou no facil");
 

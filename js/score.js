@@ -25,7 +25,7 @@ function workflow() {
 
   let myItem = localStorage.getItem("key");
   let answerUser = localStorage.getItem("answer");
-  console.log(myItem);
+  //   console.log(myItem);
 
   const answerUserSplit = answerUser.split(",");
 
@@ -41,7 +41,7 @@ function workflow() {
     difficulty = questionsEasy.default;
   }
 
-  console.log("isso", difficulty[0].answer);
+  //   console.log("isso", difficulty[0].answer);
 
   difficulty.forEach((quest) => {
     const elementPQuest = document.createElement("p");
@@ -64,7 +64,7 @@ function workflow() {
   for (let index = 0; index < answerUserSplit.length; index++) {
     if (Number(answerUserSplit[index]) == Number(difficulty[index].answer)) {
       score++;
-      console.log("score:", score);
+      //   console.log("score:", score);
     } else {
     }
   }
