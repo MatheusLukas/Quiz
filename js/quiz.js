@@ -14,7 +14,7 @@ const questionsEasy = JSON.parse(JSON.stringify(dataQuestEasy));
 const questionsMedium = JSON.parse(JSON.stringify(dataQuestMedium));
 const questionsHard = JSON.parse(JSON.stringify(dataQuestHard));
 
-console.log(questionsEasy.default);
+// console.log(questionsEasy.default);
 
 const pageQuest = document.querySelector("#page-quest");
 const divQuiz = document.querySelector("#div-quiz");
@@ -32,7 +32,7 @@ function addButtonListeners() {
   answerButtons.forEach((button) => {
     button.onclick = (e) => {
       valueQuest = e.target.textContent;
-      console.log(e.target.textContent, valueQuest);
+      // console.log(e.target.textContent, valueQuest);
     };
   });
 }
@@ -58,7 +58,7 @@ function mainWorkflow() {
     difficulty = questionsEasy.default;
   }
 
-  console.log("aqui", difficulty);
+  // console.log("aqui", difficulty);
 
   let index = 0;
 
@@ -81,13 +81,13 @@ function mainWorkflow() {
 
   const buttonNextQuest = document.querySelector("#button-next");
   buttonNextQuest.addEventListener("click", () => {
-    console.log("value", valueQuest);
+    // console.log("value", valueQuest);
 
     if (valueQuest === undefined) {
       return alert("Selecione uma opção");
     }
     getAnswer(valueQuest);
-    console.log("array", answerUser);
+    // console.log("array", answerUser);
     if (index >= difficulty.length - 1) {
       let keyAnswer = "answer";
       localStorage.setItem(keyAnswer, answerUser);
@@ -98,7 +98,7 @@ function mainWorkflow() {
       divAnswer.removeChild(divAnswer.lastChild);
     }
 
-    console.log("l", difficulty.length);
+    // console.log("l", difficulty.length);
 
     index++;
 
@@ -113,7 +113,7 @@ function mainWorkflow() {
 
       button.innerText = quest;
 
-      console.log(quest);
+      // console.log(quest);
 
       divAnswer.appendChild(button);
     });
